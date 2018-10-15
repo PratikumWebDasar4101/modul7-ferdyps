@@ -17,7 +17,7 @@
             </td>
         </tr>
         <?php
-            if (isset($_GET['cari'] && $_GET['cari']=='search' && isset($_GET['datamahasiswa'])) {
+            if (isset($_GET['cari']) && $_GET['cari']=='search' && isset($_GET['datamahasiswa'])) {
                 $datamahasiswa = $_GET['datamahasiswa'];
                 $query = "SELECT `nim`, `nama` FROM `mahasiswa` WHERE `nim` LIKE %datamahasiswa% OR `nama` LIKE %datamahasiswa";
             }else {
